@@ -5,3 +5,41 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
+:root
+{
+  --glass-color:#111928bf;
+  --primary-color: #ca982e;
+  --secondary-color: #222;
+  --tertiary-color: #cdcdcd;
+  --overlay-color: #00000078;
+  --title-color: #1e1e1e;
+  --text-color: #5e5e60;
+  --background-color: #FFF;
+  --light-color: #F4F4F4;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+body {
+  background-image:url("/bg.jpg");
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container
+{
+  width: 90vw;
+  height: 90vh;
+  background: var(--glass-color);
+  backdrop-filter: blur(19px) saturate(180%);
+  border: 1px solid color-mix(in srgb, var(--white) 20%, transparent);
+  z-index: 1;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12Px;
+  color: var(--white);
+}
