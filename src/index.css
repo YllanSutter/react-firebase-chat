@@ -37,9 +37,7 @@ body {
   backdrop-filter: blur(19px) saturate(180%);
   border: 1px solid color-mix(in srgb, var(--white) 20%, transparent);
   z-index: 1;
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  display: flex;
   border-radius: 12Px;
   color: var(--white);
 }
